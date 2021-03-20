@@ -1,0 +1,87 @@
+<!-- Khai báo loại tài liệu: html -->
+<!DOCTYPE html>
+<!-- cmt : ctr + / -->
+<!-- h1 - h6: thẻ tiêu đề (heading) nhỏ dần từ 1->6
+     p: thẻ đoạn văn (paragraph)
+     img: ảnh 
+     a: mỏ neo (anchor) liên kết
+     ul, li: danh sách (ul = unordered list, li = list item)
+     table: bảng
+     input:
+     button: tạo nút bấm
+     div: tạo khối
+-->
+<!-- Thẻ html -->
+<html>
+    <!-- Phần đầu -->
+    <head>
+        <!-- Tên trang web (search GG) -->
+        <title>HOC WEB</title>
+        <!-- Gõ tiếng việt -->
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="external.css">
+        <!-- internal -->
+        <!-- <style>
+            h1 {
+                color: purple;
+            }
+        </style> -->
+    </head>
+    <!-- Phần thân -->
+    <body>
+        <div>
+            <h1 title="Đây là tiêu đề">Tình trang covid-19 hiện nay</h1>
+
+            <input type="checkbox">
+            <input name="gender"type="radio">
+            <input name="gender"type="radio">
+            <input name="gender"type="radio">
+
+            <button>Đăng ký</button>
+
+            <p>Rất khó lường</p>
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fzingnews.vn%2Fnhung-hinh-anh-luu-giu-khoanh-khac-dang-nho-cua-doi-nguoi-post860196.html&psig=AOvVaw31o7JhMhVd1wqDBsTvZjS1&ust=1606497457719000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIjCp8TboO0CFQAAAAAdAAAAABAD" alt="Ảnh cậu bé đang cười">
+            <a href="https://fullstack.edu.vn/learning/html-css/the-html-thong-dung">Tới trang học lập trình</a>
+            <ul>
+                <li>HTML, CSS là gì</li>
+                <li>Cài đặt môi trường</li>
+                <li></li>
+                <li></li>
+            </ul>
+            <table>
+                <thead>
+                    <!-- table header -->
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Địa chỉ</th>
+                </thead>
+                <tbody>
+                    <!-- table row -->
+                    <tr>
+                        <td>1</td>
+                        <td>Trí</td>
+                        <td>Hà Nội</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- inline dùng attribute -->
+        <!-- external dùng 1 file css bên ngoài -->
+        <!-- internal dùng trong  -->
+        <h1 style="color:blue;font-size: 16px">CSS in HTML</h1>
+        <ol>
+            <li>Internal</li>
+            <li>External</li>
+            <li>Inline</li>
+        </ol>
+        <div>
+            <!-- id để phân biệt cách định dạng -->
+            <!-- class giống id nhưng dùng cho số nhiều -->
+            <h1>CSS selectors</h1>
+            <h1 id="first-heading">ID</h1>
+            <h1 class="second-heading">Class</h1>
+            <h1 class="second-heading">CSS selectors</h1>
+            <h1 class="second-heading">ID</h1>
+        </div>
+    </body>
+</html>
