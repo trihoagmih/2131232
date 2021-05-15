@@ -186,7 +186,7 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/THE BAND/assets/img/slider/slider.jpg') top center / cover no-repeat;
+    background: url('../img/slider/slider.jpg') top center / cover no-repeat;
 }
 
 #slider .text-content {
@@ -206,6 +206,8 @@ html {
 
 #slider .text-description {
     margin-top: 25px;
+    font-size: 15px;
+    text-shadow: 0 0 1px #000;
 }
 
 /* #content {
@@ -445,4 +447,4 @@ html {
 
 #footer .copy-right a {
     color: rgba(0, 0, 0, 0.6);
-}
+} 

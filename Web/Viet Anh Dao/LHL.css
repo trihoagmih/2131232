@@ -1,0 +1,145 @@
+* {
+    box-sizing: inherit;
+}
+
+html { 
+    /* 10px */
+    font-size: 62.5%; 
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+@keyframes heartBeat {
+    from {
+        /* opacity: 1; */
+        transform: scale(1);
+    }to {
+        /* opacity: 0; */
+        transform: scale(2);
+    }
+}
+
+.wrap {
+    margin: 200px;
+    animation: heartBeat 2s linear infinite alternate;
+}
+
+
+.heart {
+    margin: auto;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transform: rotate(45deg);
+    border-radius: 2px;
+}
+
+.heart::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.heart::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%);
+}
+
+.heart__for {
+    font-size: 1.6rem;
+    font-weight: 500;
+    transform: rotate(-45deg);
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: -8px;
+    z-index: 2;
+}
+
+@keyframes go {
+    from {
+        transform: translateX(-4425%);
+    } to {
+        transform: translateX(4425%);
+
+    }
+}
+
+.wrapper {
+    animation: go 1s infinite alternate;
+}
+
+.heart1 {
+    /* margin: auto; */
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    transform: rotate(45deg);
+    border-radius: 2px;
+}
+
+.heart1::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.heart1::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%);
+}
+
+.send__love {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user {
+    padding: 0 30px;
+}
+
+.user-name {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 8px 0;
+}
+
+.user-icon {
+    font-size: 10rem;
+    display: block;
+    margin: 0 24px;
+}

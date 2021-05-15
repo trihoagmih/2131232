@@ -237,7 +237,8 @@
     border-radius: 2px;
     cursor: default;
     transform-origin: calc(100% - 32px) top;
-    animation: headerNotifyGrowth ease-in 0.2s;    will-change: opacity, transform;
+    animation: headerNotifyGrowth ease-in 0.2s;    
+    will-change: opacity, transform;
     display: none;
 }
 
@@ -451,10 +452,6 @@
 .auth-form__socials--google {
     background: var(--white-color);
     color: #666;
-}
-
-.auth-form__socials--apple {
-    background-color: #000;
 }
 
 .auth-form__help {
