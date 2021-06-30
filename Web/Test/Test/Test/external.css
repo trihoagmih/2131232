@@ -1,3 +1,14 @@
-.container div div {
-    color: green;
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.boxed {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-color: #123523;
+    top: 50%;
+    left: 50%;
 }
